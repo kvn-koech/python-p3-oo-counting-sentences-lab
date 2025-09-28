@@ -1,7 +1,8 @@
-# lib/my_string.py
+# lib/count_sentences.py
 class MyString:
     def __init__(self, value=''):
-        self.value = value
+        self._value = ''
+        self.value = value  # This will use the setter for validation
 
     @property
     def value(self):
